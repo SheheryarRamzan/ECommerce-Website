@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> User Profile </title>
+		<link rel="stylesheet" href="">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins',sans-serif;
+		}
+		body{
+			background-image: url('./img/bg.jpg');
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			height: 100vh;
+		}
+		.profile-card{
+			width: 516px;
+			margin: auto;
+			margin-top: 12px;
+			margin-bottom: 12px;
+			background: #ffffffd9;
+			border-radius: 10px;
+			opacity: 0.98;
+			font-weight: 800;
+			box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.5);
+			position: relative;
+		}
+		.image-container{
+			position: relative;
+		}
+		.image-container img{
+			width: 29%;
+			border-radius: 50%;
+			margin-top: 15px;
+			margin-left: 190px;
+			height: 152px;
+		}
+		.title{
+			position: absolute;
+			left: 183px;
+			top: 170px;
+			font-size: 17px;
+			font-weight: 700;
+			color: #292525;
+			text-shadow: rgb(255, 0, 0) 1px 0  10px;
+		}
+		.main-container{
+			padding: 32px 20px 20px 20px;
+		}
+		.info{
+			color: black;
+			margin-right: 16px;
+			padding: 14px;
+		}
+		.skills{
+			background-color: green;
+			border-radius: 16px;
+			opacity: 0.45;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.bar{
+			padding: 0.05rem 12px;
+			border-radius: 16px;
+			text-align: center;
+			color: white;
+			background-color: blue;
+			opacity: 1;
+		}
+		.btn{
+			padding: 10px;
+			margin-top: 9px;
+			margin-bottom: 8px;
+			background-color: #164a40;
+			color: white;
+			width: 65px;
+			outline: none;
+			border-radius: 7px;
+			cursor: pointer;
+			margin-left: 12px;
+		}
+		.about{
+			border: 2px solid gray;
+			border-radius: 7px;
+			margin-left: 12px;
+			display: none;
+
+		}
+		.about img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-left: 12px;
+			margin-top: 4px;
+		}
+		.about p{
+			padding: 12px;
+			margin-top: 0px;
+			margin-left: 13px;
+			font-family: 'Lobster',cursive;
+			font-size: 17px;
+		}
+		.about h3{
+			margin-left: 14px;
+			text-decoration: underline;
+		}
+		.btn:hover{
+			background-color: #39524d;
+		}
+		.follow p{
+			color: black;
+			font-size: 18px;
+
+		}
+		
+		.fab:hover{
+		opacity: 0.7;
+		cursor: pointer;
+	}
+
+
+
+
+	</style>
+	
+<body>
+<div class="profile-card">
+	<div class="image-container">
+		<img src="./img/sherry.jpg">
+		<div class="title">
+			<h2>Sheheryar.R</h2>
+		</div>
+	</div>
+	<div class="main-container">
+		<p>University : FAST</p>
+		
+		<p>Country: Islamabad,Pakistan</p>
+		
+		<p></i>Email: Sheheryarramzan01@gmail.com</p>
+		
+		<p>Contact Number: +92-3145428364</p>
+		
+		<p>Orders : 25 Orders </p>
+		
+		<p>Coupons Used: 20</b></p>
+		
+		<p>Adress : House # 86, Street # 02, Block-A, PWD Housing Society, Islamabad  </b></p>
+		
+		<p>Date Of Birth (DOB) : 19 September, 2001 </b></p>
+		
+		<p>Total Payment: 3000$ </b></p>
+		
+		<p>Last Order: 12/26/2020 </b></p>
+		
+		<p>Premium User! </b></p>
+		
+		<p>Vouchers Used: 200 </b></p>
+
+		<p>Account Valid Till: 30/12/2025 </b></p>
+		
+		
+	
+	</div>
+</div>
+<script>
+	let btn=document.querySelector('.btn');
+	let about=document.querySelector('.about');
+	btn.addEventListener('click',function(){
+		if(this.innerText=="More"){
+			about.style.display="block";
+			this. innerText="Less";
+		}
+		else{
+			about.style.display="none";
+			this. innerText="More";
+		}
+	})
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
